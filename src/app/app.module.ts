@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { ListingComponent } from './listing/listing.component';
-import { TopMenuComponent } from './top-menu/top-menu.component';
-import { FooterComponent } from './footer/footer.component';
-import { ServicesComponent } from './services/services.component';
-import { ListPageComponent } from './list-page/list-page.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { ListingComponent } from './components/listing/listing.component';
+import { TopMenuComponent } from './components/top-menu/top-menu.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ListPageComponent } from './components/list-page/list-page.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     FooterComponent,
     ServicesComponent,
     ListPageComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

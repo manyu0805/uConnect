@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { ServicesComponent } from './services/services.component';
-import { ListingComponent } from './listing/listing.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { ListPageComponent } from './list-page/list-page.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ListingComponent } from './components/listing/listing.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { ListPageComponent } from './components/list-page/list-page.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'list-page',
     component: ListPageComponent
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent
   }
 ];
 
