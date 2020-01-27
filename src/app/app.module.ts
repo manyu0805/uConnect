@@ -11,6 +11,8 @@ import { ServicesComponent } from './components/services/services.component';
 import { ListPageComponent } from './components/list-page/list-page.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { BlogListComponent } from './components/blog-list/blog-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     ServicesComponent,
     ListPageComponent,
     SearchBarComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    BlogPostComponent,
+    BlogListComponent
   ],
   imports: [
     BrowserModule,

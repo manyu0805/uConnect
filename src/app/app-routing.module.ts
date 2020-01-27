@@ -6,6 +6,8 @@ import { ListingComponent } from './components/listing/listing.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { ListPageComponent } from './components/list-page/list-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { BlogListComponent } from './components/blog-list/blog-list.component';
 
 
 const routes: Routes = [
@@ -29,6 +31,14 @@ const routes: Routes = [
   {
     path: 'about-us',
     component: AboutUsComponent
+  },
+  {
+    path: 'blog-post',
+    component: BlogPostComponent
+  },
+  {
+    path: 'blog-list',
+    component: BlogListComponent
   }
 ];
 
