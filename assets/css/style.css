@@ -657,7 +657,7 @@ ul.pagination .active a {
 }
 
 .navigation {
-  padding: 20px 0;
+  padding:  0 0 !important;
 }
 
 .navigation .navbar-nav {
@@ -2700,4 +2700,10 @@ form textarea {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=maps/style.css.map */
+/*# custom css */
+
+
+.card-block{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
