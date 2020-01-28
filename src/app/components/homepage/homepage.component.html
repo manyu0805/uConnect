@@ -4,6 +4,7 @@
   =            Hero Area            =
   ================================-->
   
+  
   <section class="hero-area bg-1 text-center overly">
     <!-- Container Start -->
     <div class="container">
@@ -46,10 +47,9 @@
                           </div>
                           <div class="form-group col-md-3">
                             <select class="w-100 form-control mt-lg-1 mt-md-2">
-                              <option>Category</option>
-                              <option value="1">Top rated</option>
-                              <option value="2">Lowest Price</option>
-                              <option value="4">Highest Price</option>
+                              <option >Category</option >
+                              <option *ngFor="let job of jobList">{{job.name}}</option>
+                              
                             </select>
                           </div>
                           <div class="form-group col-md-3">
@@ -70,7 +70,10 @@
     </div>
     <!-- Container End -->
   </section>
-  <section class="divider"></section>
+  <section class="divider">
+
+  </section>
+  
   <!--===================================
   =            Client Slider            =
   ====================================-->
@@ -89,3 +92,95 @@
   
   
   <!-- JAVASCRIPTS -->
+  <section class="popular-deals section bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2>Trending Courses</h2>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- offer 01 -->
+        <div class="col-lg-12">
+          <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <div class="card">
+                <!-- App promotion -->
+                <div class="block-2 app-promotion">
+                  <div class="mobile d-flex">
+                    
+                    <p>Get the uConnect Mobile App and Save more</p>
+                  </div>
+                  <div class="row">
+                    
+                  </div>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
+                  <div class="download-btn d-flex my-3">
+                    <a href="#"><img src="images/Kruse_CNDLS_Profile.png" class="img-fluid" alt=""></a>
+                    <a href="#" class=" ml-3"><img src="images/apps/apple-app-store.png" class="img-fluid" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </ngx-slick>
+     
+        </div>
+        
+        
+      </div>
+
+     
+    </div>
+
+  </section>
+  <section class="popular-deals section bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2>Top Services</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- offer 01 -->
+        <div class="col-lg-12">
+          <ngx-slick class="carousel" #slickModal="slick-modal" [config]="sliderCon" (afterChange)="afterChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <div class="card">
+                <!-- App promotion -->
+                <div class="block-2 app-promotion">
+                  <div class="mobile d-flex">
+                    <a href="">
+                      <!-- Icon -->
+                      <img src="assets/images/footer/phone-icon.png" alt="mobile-icon">
+                    </a>
+                    <p>Get the uConnect Mobile App and Save more</p>
+                  </div>
+    
+                  <div class="download-btn d-flex my-3">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
+                    <a href="#"><img src="images/apps/google-play-store.png" class="img-fluid" alt=""></a>
+                    <a href="#" class=" ml-3"><img src="images/apps/apple-app-store.png" class="img-fluid" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </ngx-slick>
+     
+        </div>
+        
+        
+      </div>
+      
+      
+     
+     
+    </div>
+
+  </section>
+
+ 

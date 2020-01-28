@@ -13,6 +13,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { BlogListComponent } from './components/blog-list/blog-list.component';
+import { SlickModule } from 'ngx-slick';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BlogListComponent } from './components/blog-list/blog-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
