@@ -7,6 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  style = 'hero-area bg-1 text-center overly'
   jobList = [
     {
       name: "MENTORS",
@@ -50,6 +51,12 @@ export class HomepageComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
+    let i = 1
+    setTimeout(()=>{  
+      i++  //<<<---    using ()=> syntax
+      this.style = 'hero-area bg-'+{i} +'text-center overly';
+      i++
+      }, 3000);
   }
 
   slideConfig = {
@@ -90,5 +97,14 @@ export class HomepageComponent implements OnInit {
   onClick(){
     this.router.navigate(['/listing']);
   }
+
+  afterChange(EVENTS){
+
+  }
+
+  getstyle(){
+    return this.style
+  }
+
 
 }

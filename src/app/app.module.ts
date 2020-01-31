@@ -8,12 +8,13 @@ import { ListingComponent } from './components/listing/listing.component';
 import { TopMenuComponent } from './components/top-menu/top-menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ServicesComponent } from './components/services/services.component';
-import { ListPageComponent } from './components/list-page/list-page.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { BlogListComponent } from './components/blog-list/blog-list.component';
 import { SlickModule } from 'ngx-slick';
+import { PartnerConfigurationComponent } from './components/partner-configuration/partner-configuration.component';
+import { ListPageModule } from './components/list-page-module/list-page.module';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,11 @@ import { SlickModule } from 'ngx-slick';
     TopMenuComponent,
     FooterComponent,
     ServicesComponent,
-    ListPageComponent,
     SearchBarComponent,
     AboutUsComponent,
     BlogPostComponent,
-    BlogListComponent
+    BlogListComponent,
+    PartnerConfigurationComponent
   ],
   imports: [
     BrowserModule,

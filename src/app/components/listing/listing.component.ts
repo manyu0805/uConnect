@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listing.component.css']
 })
 export class ListingComponent implements OnInit {
-  list = [1,1,1,1,1]
+  list = [1,1,1,1,1,1,1,1]
   constructor() { }
 
   ngOnInit() {
