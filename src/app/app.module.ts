@@ -16,6 +16,8 @@ import { SlickModule } from 'ngx-slick';
 import { PartnerConfigurationComponent } from './components/partner-configuration/partner-configuration.component';
 import { ListPageModule } from './components/list-page-module/list-page.module';
 import { ConfirmationListComponent } from './components/confirmation-component/confirmation-book-list.component';
+import { ListCheckoutComponent } from './components/checkout-pages/list-checkout-pages/list-checkout.component';
+import {  UserDashboardComponent } from './components/dashboard/user-dashboard/user-dashboard.componet';
 
 @NgModule({
   declarations: [
@@ -29,8 +31,10 @@ import { ConfirmationListComponent } from './components/confirmation-component/c
     AboutUsComponent,
     BlogPostComponent,
     BlogListComponent,
+    ListCheckoutComponent,
     PartnerConfigurationComponent,
-    ConfirmationListComponent
+    ConfirmationListComponent,
+    UserDashboardComponent 
   ],
   imports: [
     BrowserModule,

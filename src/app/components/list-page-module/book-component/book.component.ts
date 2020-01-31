@@ -16,7 +16,7 @@ slides = [1,1,1,1,1,1,1,1,1,1,1,11,1,1,1]
     "slidesToShow": 6, 
     "slidesToScroll": 3,
     "autoplay": false,
-    "autoplaySpeed": 2000
+    "infinite": false,
 };
 
 getCss(index){
@@ -31,7 +31,7 @@ getCss(index){
 }
 
     naviagte(){
-            this.router.navigate(['/confirm/book']);
+            this.router.navigate(['/list-checkout']);
     }
 
 

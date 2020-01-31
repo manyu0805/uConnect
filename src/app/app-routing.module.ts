@@ -10,6 +10,8 @@ import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { BlogListComponent } from './components/blog-list/blog-list.component';
 import { PartnerConfigurationComponent } from './components/partner-configuration/partner-configuration.component';
 import { ConfirmationListComponent } from './components/confirmation-component/confirmation-book-list.component';
+import { ListCheckoutComponent } from './components/checkout-pages/list-checkout-pages/list-checkout.component';
+import { UserDashboardComponent } from './components/dashboard/user-dashboard/user-dashboard.componet';
 
 
 const routes: Routes = [
@@ -34,6 +36,14 @@ const routes: Routes = [
   {
     path: 'list-page',
     loadChildren: './components/list-page-module/list-page.module#ListPageModule'
+  },
+  {
+    path: 'user-dashboard',
+    component: UserDashboardComponent
+  },
+  {
+    path: 'list-checkout',
+    component: ListCheckoutComponent
   },
   {
     path: 'about-us',
