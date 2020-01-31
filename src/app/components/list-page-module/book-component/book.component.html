@@ -4,7 +4,7 @@
         <!-- offer 01 -->
         <div class="col-lg-12">
             
-          <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+          <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" >
             <div ngxSlickItem *ngFor="let slide of slides; let index= index" class="slide">
               <a class="">
                 <div class="{{getCss(index)}}">
