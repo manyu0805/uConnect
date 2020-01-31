@@ -9,6 +9,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { BlogListComponent } from './components/blog-list/blog-list.component';
 import { PartnerConfigurationComponent } from './components/partner-configuration/partner-configuration.component';
+import { ConfirmationListComponent } from './components/confirmation-component/confirmation-book-list.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'about-us',
     component: AboutUsComponent
+  },
+  {
+    path: 'confirm/book',
+    component: ConfirmationListComponent
   },
   {
     path: 'blog-post',

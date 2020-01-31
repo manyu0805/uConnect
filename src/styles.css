@@ -1,4 +1,5 @@
 /*=== MEDIA QUERY ===*/
+@import '~material-design-icons/iconfont/material-icons.css';
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
 body {
   line-height: 1.5;
@@ -1538,6 +1539,52 @@ ul.pagination .active a {
   padding: 5px;
 }
 
+.book-date{
+  
+ background-color: #fff;
+  color: black;
+  border-color: #28a745;
+  margin-left: 5px;
+
+}
+
+.selected-date{
+  background-color: #28a745;
+  color: #fff;
+  border: #000;
+}
+
+.selected-date h3{
+  color: #fff
+}
+
+.slot-padding{
+  padding: 10px;
+}
+
+.slot{
+  padding-left: 29px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.slot-icon{
+  padding-top: 10px;
+}
+
+
+.book-date h3{
+  color: black
+}
+
+.date-choose{
+  padding: 5px;
+}
+
+.date-choose .slot{
+  font-size: 10px;
+
+}
 
 .product-item .card .card-body .card-text {
   color: #777;

@@ -5,6 +5,7 @@ import { ListDetailComponent } from './list-detail-component/list-detail.compone
 import { ListPageRouterModule } from './list-page-routing.module';
 import { CommonModule } from '@angular/common';
 import { BookComponent } from './book-component/book.component';
+import { SlickModule } from 'ngx-slick';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { BookComponent } from './book-component/book.component';
   ],
   imports: [
     CommonModule,
-    ListPageRouterModule
+    ListPageRouterModule,
+    SlickModule.forRoot()
   ],
   providers: [],
   bootstrap: []

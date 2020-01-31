@@ -15,6 +15,7 @@ import { BlogListComponent } from './components/blog-list/blog-list.component';
 import { SlickModule } from 'ngx-slick';
 import { PartnerConfigurationComponent } from './components/partner-configuration/partner-configuration.component';
 import { ListPageModule } from './components/list-page-module/list-page.module';
+import { ConfirmationListComponent } from './components/confirmation-component/confirmation-book-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListPageModule } from './components/list-page-module/list-page.module';
     AboutUsComponent,
     BlogPostComponent,
     BlogListComponent,
-    PartnerConfigurationComponent
+    PartnerConfigurationComponent,
+    ConfirmationListComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListPageComponent } from './list-page.component';
 import { ListDetailComponent } from './list-detail-component/list-detail.component';
 import { BookComponent } from './book-component/book.component';
+import { ConfirmationListComponent } from '../confirmation-component/confirmation-book-list.component';
 
 
 const routes: Routes = [

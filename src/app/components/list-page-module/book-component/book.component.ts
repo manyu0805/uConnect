@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book',
@@ -6,15 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookComponent implements OnInit {
 list = [1,2];
-slides = ['assets/images/download.png', 'assets/images/blog/post-4.jpg', 'assets/images/blog/post-4.jpg','assets/images/blog/post-4.jpg', 'assets/images/download.png']
-  constructor() { }
+slides = [1,1,1,1,1,1,1,1,1,1,1,11,1,1,1]
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
   slideConfig = {
-    "slidesToShow": 3, 
+    "slidesToShow": 6, 
     "slidesToScroll": 3,
-    "autoplay": true,
-    "autoplaySpeed": 2000};
+    "autoplay": false,
+    "autoplaySpeed": 2000
+};
+
+getCss(index){
+    if(index == 0)
+    return 'card selected-date'
+
+    else{
+      return  'card book-date'
+    }
+
 
 }
+
+    naviagte(){
+            this.router.navigate(['/confirm/book']);
+    }
+
+
+
+}
+
+
