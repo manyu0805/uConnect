@@ -38,6 +38,10 @@ const routes: Routes = [
     loadChildren: './components/list-page-module/list-page.module#ListPageModule'
   },
   {
+    path: 'e-books',
+    loadChildren: './components/ebooks/ebooks.module#EbooksModule'
+  },
+  {
     path: 'user-dashboard',
     component: UserDashboardComponent
   },

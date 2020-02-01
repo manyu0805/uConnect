@@ -1,0 +1,273 @@
+<section>
+    <div class="row">
+        <div class="col-lg-3">
+            
+            <div class="widget category-list">
+                <h4 class="widget-header">All Category</h4>
+                <ul class="category-list">
+                    <li><a href="category.html">Romance <span>93</span></a></li>
+                    <li><a href="category.html">Thriller <span>233</span></a></li>
+                    <li><a href="category.html">Fiction  <span>183</span></a></li>
+                    <li><a href="category.html">War <span>343</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+                      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                        <div class="home">
+                          <div class="">
+                            <!-- App promotion -->
+                            <img src="{{slide.img}}" alt="" width="100%">
+                          </div>
+                        </div>
+                        
+                      </div>
+                  </ngx-slick>
+               
+                  </div>
+               
+            </div>
+            <div class="e-book-widget">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputtext4" placeholder="What are you looking for">
+                      </div>
+                      <div class=" col-md-3">
+                        <select class="w-100 form-control">
+                          <option >Category</option >
+                          <option *ngFor="let job of jobList">{{job.name}}</option>
+                          
+                        </select>
+                      </div>
+                      <div class=" col-md-3 align-self-center">
+                        <button type="submit" class="btn btn-main-search" (click)="onClick()">Search Now</button>
+                      </div>
+            </div>
+            </div>
+            
+            <div class="e-book-widget">
+                <div class="list-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span>
+                                <h3 class="tab-title">Best Sellers</h3>
+                            </span>
+                            
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig1">
+                                <div ngxSlickItem *ngFor="let slide of books" class="slide">
+                                  <div class="home">
+                                    <a routerLink="/e-books/1/ebook-detail">
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                            <img src="/assets/images/9781604339055.jpg" class="center" alt="" >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                             <h4 > <span class="actual-font">₹700</span> ₹500</h4>
+                                            </div>
+                                         
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                             <div class="product-ratings">
+                                                 <ul class="list-inline">
+                                                     <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                     <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                     <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                     <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                     <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                 </ul>
+                                             </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                                <h6>Vintage Wheel</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                   
+                                  </div>
+                                  
+                                </div>
+                            </ngx-slick>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-container">
+                    <div class="row mt-10">
+                        <div class="col-md-12">
+                            <span>
+                                <h3 class="tab-title">New Arrival</h3>
+                            </span>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig1">
+                                <div ngxSlickItem *ngFor="let slide of books" class="slide">
+                                  <div class="home">
+                                    <a routerLink="/e-books/1/ebook-detail">
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                            <img src="/assets/images/9781604339055.jpg" class="center" alt="" >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                             <h4 > <span class="actual-font">₹700</span> ₹500</h4>
+                                            </div>
+                                         
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                             <div class="product-ratings">
+                                                 <ul class="list-inline">
+                                                     <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                     <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                     <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                     <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                     <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                 </ul>
+                                             </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                                <h6>Vintage Wheel</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                   
+                                  </div>
+                                  
+                                </div>
+                            </ngx-slick>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-container">
+                    <div class="row mt-10">
+                        <div class="col-md-12">
+                            <span>
+                                <h3 class="tab-title">E-Books</h3>
+                            </span>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig1">
+                                <div ngxSlickItem *ngFor="let slide of books" class="slide">
+                                  <div class="home">
+                                   <div class="row">
+                                       <div class="col-lg-12 text-center">
+                                        <img src="/assets/images/9781604339055.jpg" class="center" alt="" >
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-lg-12 text-center">
+                                        <h4 > <span class="actual-font">₹700</span> ₹500</h4>
+                                       </div>
+                                    
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-lg-12 text-center">
+                                        <div class="product-ratings">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-lg-12 text-center">
+                                           <h6>Vintage Wheel</h6>
+                                       </div>
+                                   </div>
+                                  </div>
+                                  
+                                </div>
+                            </ngx-slick>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-container">
+                    <div class="row mt-10">
+                        <div class="col-md-12">
+                            <span>
+                                <h6 class="tab-title">You May Like</h6>
+                            </span>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig1">
+                                <div ngxSlickItem *ngFor="let slide of books" class="slide">
+                                  <div class="home">
+                                   <div class="row">
+                                       <div class="col-lg-12 text-center">
+                                        <img src="/assets/images/9781604339055.jpg" class="center" alt="" >
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-lg-12 text-center">
+                                        <h4 > <span class="actual-font">₹700</span> ₹500</h4>
+                                       </div>
+                                    
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-lg-12 text-center">
+                                        <div class="product-ratings">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-lg-12 text-center">
+                                           <h6>Vintage Wheel</h6>
+                                       </div>
+                                   </div>
+                                  </div>
+                                  
+                                </div>
+                            </ngx-slick>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+                
+            
+        </div>
+    </div>
+</section>
