@@ -12,9 +12,11 @@ export class EbooksHomepageComponent implements OnInit {
     {img: "/assets/images/31_inr.jpg"},
     {img: "/assets/images/14_inr.jpg"},
     ];
-    books = [1,1,1,1,1,1,11,1,1,,11,1,1,1,1,1,1,1
-      ];
+      books = [1,1,1,1,1,1,11,1,1,,11,1,1,1,1,1,1,1
+        ];
   constructor() { }
+
+  jobList = ['Fiction', 'Romance', 'Thriller', 'Biography']
 
   ngOnInit() {
   }
