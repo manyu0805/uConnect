@@ -16,13 +16,15 @@ export class HomepageComponent implements OnInit {
       css: "fa fa-laptop icon-bg-6"
     },
     {
-      name: "JOBS & INTERNSHIP",
-      jobs: ['Goverment', 'Information Technology', 'BPO', 'Consultant'],
-      link: 'listing',
-      css: "fa fa-laptop icon-bg-1"
+      name: "TRAININGS & COURSES",
+      jobs: ['International Seminars', 'National Seminars',
+       'Inter-College Seminar', 'College Training'],
+       link: 'blog-list',
+       css: "fa fa-laptop icon-bg-4"
     },
+    
     {
-      name: "EVENTS & FESTS",
+      name: "Workshop & EVENTS",
       jobs: ['Goverment', 'College', 'Workshop', 'Seminars'],
       link: 'blog-list',
       css: "fa fa-laptop icon-bg-2"
@@ -33,19 +35,14 @@ export class HomepageComponent implements OnInit {
       link: 'listing',
       css: "fa fa-laptop icon-bg-3"
     },
-     {
-      name: "TRAININGS & SEMINARS",
-      jobs: ['International Seminars', 'National Seminars',
-       'Inter-College Seminar', 'College Training'],
-       link: 'blog-list',
-       css: "fa fa-laptop icon-bg-4"
-    },
     {
-      name: "EDUCATIONAL & INDUSTRIAL TOUR",
-      jobs: ['Education Tour', 'Industrial Tour', 'Conference Toure', 'Worskhop'],
-      link: 'blog-list',
-      css: "fa fa-laptop icon-bg-5"
+      name: "JOBS & INTERNSHIP",
+      jobs: ['Goverment', 'Information Technology', 'BPO', 'Consultant'],
+      link: 'listing',
+      css: "fa fa-laptop icon-bg-1"
     },
+     
+    
   ]
   slides = ['assets/images/download.png', 'assets/images/blog/post-4.jpg', 'assets/images/blog/post-4.jpg','assets/images/blog/post-4.jpg', 'assets/images/download.png']
   constructor(private route: ActivatedRoute, private router: Router) { }
@@ -60,7 +57,7 @@ export class HomepageComponent implements OnInit {
   }
 
   slideConfig = {
-    "slidesToShow": 3, 
+    "slidesToShow": 4, 
     "slidesToScroll": 3,
     "autoplay": true,
     "autoplaySpeed": 2000};

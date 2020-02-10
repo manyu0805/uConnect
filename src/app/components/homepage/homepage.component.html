@@ -5,7 +5,7 @@
   ================================-->
   
   
-  <section class="hero-area home-image text-center overly">
+  <section class="hero-area home-image text-center overly ">
     <!-- Container Start -->
     <div class="container">
       <div class="row">
@@ -50,123 +50,178 @@
         </div>
       </div>
     </div>
-    <!-- Container End -->
   </section>
-  
-  
-  <!--===================================
-  =            Client Slider            =
-  ====================================-->
-  
-  
-  <!--===========================================
-  =            Popular deals section            =
-  ============================================-->
-  
- 
-  
-  <!--============================
-  =            Footer            =
-  =============================-->
-  
-  
-  
-  <!-- JAVASCRIPTS -->
-  <section class="popular-deals section bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-title">
-            <h2>Trending Courses</h2>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row">
-        <!-- offer 01 -->
-        <div class="col-lg-1">
-          <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
-            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-              <div class="home">
-                <div class="card">
-                  <!-- App promotion -->
-                  <div class="block-2 app-promotion">
-                    <div class="mobile d-flex">
-                      
-                      <p>Get the uConnect Mobile App and Save more</p>
-                    </div>
-                    <div class="row">
-                      
-                    </div>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-                    <div class="download-btn d-flex my-3">
-                      <a href="#"><img src="images/Kruse_CNDLS_Profile.png" class="img-fluid" alt=""></a>
-                      <a href="#" class=" ml-3"><img src="images/apps/apple-app-store.png" class="img-fluid" alt=""></a>
-                    </div>
-                  </div>
+  <div class="widget bg-secondry-color">
+    <h1 class="text-center mt-50">CATEGORY</h1>
+    <div class="row">
+      <!-- offer 01 -->
+      <div class="col-lg-12">
+        <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+          <div ngxSlickItem *ngFor="let slide of jobList" class="slide">
+            <div class="home" >
+              <div class="category-block">
+                <div class="header">
+                  <i class="{{slide.css}}"></i> 
+                  <h4>{{slide.name}}</h4>
                 </div>
+                <!-- <ul class="category-list" >
+                  <li *ngFor="let link of services.jobs"><a (click)="getlink(services.link)" >{{link}}<span>93</span></a></li>
+                </ul> -->
               </div>
               
             </div>
-        </ngx-slick>
-     
-        </div>
-        
-        
-      </div>
-
-     
-    </div>
-
-  </section>
-  <section class="popular-deals section bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-title">
-            <h2>Top Services</h2>
+            
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- offer 01 -->
-        <div class="col-lg-12">
-          <ngx-slick class="carousel" #slickModal="slick-modal" [config]="sliderCon" (afterChange)="afterChange($event)">
-            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-              <div class="home">
-                <div class="card">
-                  <div class="block-2 app-promotion">
-                    <div class="mobile d-flex">
-                      <a href="">
-                        <!-- Icon -->
-                        <img src="assets/images/footer/phone-icon.png" alt="mobile-icon">
-                      </a>
-                      <p>Get the uConnect Mobile App and Save more</p>
-                    </div>
-      
-                    <div class="download-btn d-flex my-3">
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-                      <a href="#"><img src="images/apps/google-play-store.png" class="img-fluid" alt=""></a>
-                      <a href="#" class=" ml-3"><img src="images/apps/apple-app-store.png" class="img-fluid" alt=""></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- App promotion -->
-                
-              </div>
-            </div>
-        </ngx-slick>
-     
-        </div>
-        
-        
+      </ngx-slick>
+   
       </div>
       
       
-     
-     
     </div>
-
-  </section>
+  </div>
+  
 
  
+   <section class="">
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-right">
+          <div class="home-img-text">
+            <h1 class="text-right">Find Guru</h1>
+            <p>Get 24X7 Online assistance from countries most experience professionals</p>
+            <div class="row">
+              <div class="col-lg-12 text-right">
+                <img src="https://cdn1.byjus.com/home/video-1.jpg" class="home_img_thumbnail">
+                <img src="https://cdn1.byjus.com/home/video-2.jpg">
+              </div>
+            </div>
+            <ul class="list-inline mt-30 text-right">
+              <li class="list-inline-item "><a class="btn btn-secondary" href="category.html">Connect Now</a></li>
+             </ul>
+          </div>
+          
+        </div>
+        <div class="col-lg-6">
+         
+             <img src="assets/images/debut-as-an-online-teacher-1.jpg" class=" home_img" alt="" >
+           
+       </div>
+       </div>
+     </div>
+
+     <section class="bg-secondry-color">
+      <div class="container">
+       <div class="row">
+         
+         <div class="col-lg-6">
+          
+              <img src="assets/images/employee-training-programs-that-work.jpg" class=" home_img" alt="" >
+            
+        </div>
+        <div class="col-lg-6 text-left">
+          <div class="home-img-text">
+            <h1 class="text-left">Online Training & Courses</h1>
+            <p>Choose any courses from more than 1000 courses approved by UGC</p>
+            <div class="row">
+              <div class="col-lg-12 text-left">
+                <img src="https://cdn1.byjus.com/home/video-1.jpg" class="home_img_thumbnail">
+                <img src="https://cdn1.byjus.com/home/video-2.jpg">
+              </div>
+            </div>
+            <ul class="list-inline mt-30 text-left">
+              <li class="list-inline-item "><a class="btn btn-secondary" href="category.html">Start Applying</a></li>
+             </ul>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+     
+    
+   </section>
+   <section class="">
+    <div class="container">
+     <div class="row">
+       <div class="col-lg-6 text-right">
+         <div class="home-img-text">
+           <h1 class="text-right">Workshops & Events</h1>
+           <p>Book Workshops and Events which inspire you to achieve your goals</p>
+           <!-- <div class="row">
+             <div class="col-lg-12 text-right">
+               <img src="https://cdn1.byjus.com/home/video-1.jpg" class="home_img_thumbnail">
+               <img src="https://cdn1.byjus.com/home/video-2.jpg">
+             </div>
+           </div> -->
+           <ul class="list-inline mt-30 text-right">
+             <li class="list-inline-item "><a class="btn btn-secondary" href="category.html">Start Booking</a></li>
+            </ul>
+         </div>
+         
+       </div>
+       <div class="col-lg-6">
+        
+            <img src="assets/images/58ec830ac77cc-2.jpg" class=" home_img" alt="" >
+          
+      </div>
+      </div>
+    </div>
+
+    <section class="bg-secondry-color">
+     <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-6">
+         
+             <img src="assets/images/0116ebooks.jpg" class=" home_img" alt="" >
+           
+       </div>
+       <div class="col-lg-6 text-left">
+         <div class="home-img-text">
+           <h1 class="text-left">E-Books & Research Papers</h1>
+           <p>Read Topseller and Famous E-books & Research Papers</p>
+           <!-- <div class="row">
+             <div class="col-lg-12 text-left">
+               <img src="https://cdn1.byjus.com/home/video-1.jpg" class="home_img_thumbnail">
+               <img src="https://cdn1.byjus.com/home/video-2.jpg">
+             </div>
+           </div> -->
+           <ul class="list-inline mt-30 text-left">
+             <li class="list-inline-item "><a class="btn btn-secondary" href="category.html">Start Exploring</a></li>
+            </ul>
+         </div>
+         
+       </div>
+       </div>
+     </div>
+    
+   
+  </section>
+  <section class="">
+    <div class="container">
+     <div class="row">
+       <div class="col-lg-6 text-right">
+         <div class="home-img-text">
+           <h1 class="text-right">Placement & Interships</h1>
+           <p>Find Best Jobs with us</p>
+           <!-- <div class="row">
+             <div class="col-lg-12 text-right">
+               <img src="https://cdn1.byjus.com/home/video-1.jpg" class="home_img_thumbnail">
+               <img src="https://cdn1.byjus.com/home/video-2.jpg">
+             </div>
+           </div> -->
+           <ul class="list-inline mt-30 text-right">
+             <li class="list-inline-item "><a class="btn btn-secondary" href="category.html">Find Your Job</a></li>
+            </ul>
+         </div>
+         
+       </div>
+       <div class="col-lg-6">
+        
+            <img src="assets/images/20171127142931.jpg" class=" home_img" alt="" >
+          
+      </div>
+      </div>
+    </div>
+
+
+

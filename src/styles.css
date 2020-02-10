@@ -590,12 +590,39 @@ button {
   margin-bottom: 30px;
 }
 
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.home_img{
+  height: 400px;
+  width: 600px;
+  padding: 20px;
+}
+
+.home_img_thumbnail{
+  padding: 10px;
+}
+
+.home-img-text{
+padding-top: 50px;
+padding-left: 30px;
+}
+
 .slot-mb-5{
   margin-bottom: 5px;
 }
 
 .mt-30 {
   margin-top: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.bg-secondry-color{
+  background-color: #f1f1f1
 }
 
 .border-bottom {
