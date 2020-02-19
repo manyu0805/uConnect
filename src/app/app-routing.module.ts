@@ -42,6 +42,10 @@ const routes: Routes = [
     loadChildren: './components/ebooks/ebooks.module#EbooksModule'
   },
   {
+    path: 'mentor',
+    loadChildren: './mentor/mentor.module#MentorModule'
+  },
+  {
     path: 'user-dashboard',
     component: UserDashboardComponent
   },

@@ -18,7 +18,7 @@ import { ListPageModule } from './components/list-page-module/list-page.module';
 import { ConfirmationListComponent } from './components/confirmation-component/confirmation-book-list.component';
 import { ListCheckoutComponent } from './components/checkout-pages/list-checkout-pages/list-checkout.component';
 import {  UserDashboardComponent } from './components/dashboard/user-dashboard/user-dashboard.componet';
-import { EbooksHomepageComponent } from './components/ebooks/ebooks-homepage/ebooks-homepage.component';
+import { MentorModule } from './mentor/mentor.module';
 
 @NgModule({
   declarations: [
@@ -35,15 +35,17 @@ import { EbooksHomepageComponent } from './components/ebooks/ebooks-homepage/ebo
     ListCheckoutComponent,
     PartnerConfigurationComponent,
     ConfirmationListComponent,
-    UserDashboardComponent,
-    
+    UserDashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MentorModule,
     SlickModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
