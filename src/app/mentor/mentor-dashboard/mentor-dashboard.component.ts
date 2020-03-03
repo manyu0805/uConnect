@@ -15,6 +15,10 @@ export class MentorDashboardComponent implements OnInit {
     this.showNav = !this.showNav;
   }
 
+  onClick(){
+    
+  }
+
   showSlider(){
       if(this.showNav){
           return 'sidebarToggle'
